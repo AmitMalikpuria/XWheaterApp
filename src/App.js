@@ -28,24 +28,23 @@ function App() {
     alert('Failed to fetch weather data')
   }
 
-  // useEffect(() => {
-  //   getWeatherReport();
-  // }, [cityName])
 
-  console.log(cityName)
+
+  
 
 
   return (
     <div >
       <div className="inputcontainer" >
         <input type="text" placeholder="Enter city name" value={cityName} onChange={(e) => setCityName(e.target.value.toLocaleLowerCase())}></input>
-        <button onClick={() => getWeatherReport(cityName)}>Search</button>
+        <button onClick={() => getWeatherReport()}>Search</button>
       </div>
 
       {
-        weatherReport.length == 0 && bool == false ? null :
-          weatherReport.length == 0 && bool == true
-            ?
+        weatherReport.length == 0 && bool == false ? 
+        //null :
+          // weatherReport.length == 0 && bool == true
+          //   ?
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Loading data...</div>
             :
             weatherReport.hasOwnProperty("current") 
