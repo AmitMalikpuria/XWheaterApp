@@ -38,7 +38,7 @@ function App() {
   return (
     <div >
       <div className="inputcontainer" >
-        <input placeholder="Enter city name" value={cityName} onChange={(e) => setCityName(e.target.value.toLocaleLowerCase())}></input>
+        <input type="text" placeholder="Enter city name" value={cityName} onChange={(e) => setCityName(e.target.value.toLocaleLowerCase())}></input>
         <button onClick={() => getWeatherReport(cityName)}>Search</button>
       </div>
 
@@ -69,6 +69,33 @@ function App() {
                 </div>
               </div> : Alert()
       }
+
+      {/* {
+        weatherReport.length == 0
+          ?
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Loading data...</div>
+          :
+          weatherReport.hasOwnProperty("current")
+            ?
+            <div className="container">
+              < div className="card">
+                <p className="heading">Temprature</p>
+                <p className="report">{weatherReport.current.temp_c}°C</p>
+              </div>
+              < div className="card">
+                <p className="heading">Humidity</p>
+                <p className="report">{weatherReport.current.humidity}%</p>
+              </div>
+              < div className="card">
+                <p className="heading">Condition</p>
+                <p className="report">{weatherReport.current.condition.text}</p>
+              </div>
+              < div className="card">
+                <p className="heading">Wind Speed</p>
+                <p className="report">{weatherReport.current.wind_kph} kph</p>
+              </div>
+            </div> : Alert()
+      } */}
 
 
 
