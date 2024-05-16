@@ -51,19 +51,19 @@ function App() {
             weatherReport.hasOwnProperty("current") 
             ?
               <div className="container">
-                < div className="card">
+                < div className="weather-cards">
                   <p className="heading">Temprature</p>
                   <p className="report">{weatherReport.current.temp_c}°C</p>
                 </div>
-                < div className="card">
+                < div className="weather-cards">
                   <p className="heading">Humidity</p>
                   <p className="report">{weatherReport.current.humidity}%</p>
                 </div>
-                < div className="card">
+                < div className="weather-cards">
                   <p className="heading">Condition</p>
                   <p className="report">{weatherReport.current.condition.text}</p>
                 </div>
-                < div className="card">
+                < div className="weather-cards">
                   <p className="heading">Wind Speed</p>
                   <p className="report">{weatherReport.current.wind_kph} kph</p>
                 </div>
@@ -78,19 +78,19 @@ function App() {
           weatherReport.hasOwnProperty("current")
             ?
             <div className="container">
-              < div className="card">
+              < div className="weather-cards">
                 <p className="heading">Temprature</p>
                 <p className="report">{weatherReport.current.temp_c}°C</p>
               </div>
-              < div className="card">
+              < div className="weather-cards">
                 <p className="heading">Humidity</p>
                 <p className="report">{weatherReport.current.humidity}%</p>
               </div>
-              < div className="card">
+              < div className="weather-cards">
                 <p className="heading">Condition</p>
                 <p className="report">{weatherReport.current.condition.text}</p>
               </div>
-              < div className="card">
+              < div className="weather-cards">
                 <p className="heading">Wind Speed</p>
                 <p className="report">{weatherReport.current.wind_kph} kph</p>
               </div>
