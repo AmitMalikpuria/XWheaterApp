@@ -45,7 +45,7 @@ function App() {
         //null :
           // weatherReport.length == 0 && bool == true
           //   ?
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Loading data...</div>
+            <p style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>Loading data...</p>
             :
             weatherReport.hasOwnProperty("current") 
             ?
