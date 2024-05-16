@@ -74,7 +74,7 @@ button{
 
 
 
-.container{
+.weather-cards{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -83,7 +83,7 @@ button{
   width: 92%;
 }
 
-.weather-cards{
+.weather-card{
   height: 80px;
   width: 23%;
   background-color: white;
